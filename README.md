@@ -1,6 +1,9 @@
 # MrBean TV Unity projekts
 
-**Darāmo darbu saraksts:**
+
+> [!IMPORTANT]
+> Projekta funkcionalitāte:
+
 - [ ] Iespēja ieslēgt / izslēgt tv
 - [ ] Kanālu maīņa funkcija
 - [ ] Skaļuma maiņa funkcija
