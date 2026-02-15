@@ -11,7 +11,7 @@
 - [x] UI elementu animēšana
 
 > [!NOTE]
->  SCENE - "TV"
+>  SCENE - **"TV"**
 
 > [!CAUTION]
 > :octocat:
