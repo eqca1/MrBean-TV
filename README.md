@@ -10,5 +10,9 @@
 - [x] Audio efekts pēc peles kursora novietošanas
 - [x] UI elementu animēšana
 
+< [!NOTE]
+< SCENE - "TV"
+
 > [!CAUTION]
 > :octocat:
+
