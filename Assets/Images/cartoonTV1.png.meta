@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cartoonTV1_0: 2133182213810911461
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,6 +1,6 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class ToggleScript : MonoBehaviour
 {
     public GameObject bean;
@@ -9,10 +9,22 @@ public class ToggleScript : MonoBehaviour
     public GameObject granny;
     public GameObject toggleLeft;
     public GameObject toggleRight;
-    public GameObject soundVolume;
+    public GameObject characterImage;
     public Sprite[] characterSprites;
-    public GameObject sizeSlider;
-    public GameObject rotationSlider;
+    public GameObject SizeSlider;
+    public GameObject RotationSlider;
+    public void ToggleTeddy(bool value)
+    {
+        teddy.SetActive(value);
+    }
+    public void ToggleCar(bool value)
+    {
+        car.SetActive(value);
+    }
+    public void ToggleGranny(bool value)
+    {
+        granny.SetActive(value);
+    }
 
     public void ToggleBean(bool value)
     {
@@ -20,26 +32,24 @@ public class ToggleScript : MonoBehaviour
         toggleLeft.GetComponent<Toggle>().interactable = value;
         toggleRight.GetComponent<Toggle>().interactable = value;
     }
-/*
-    public void ToLeft()
+    public void ToggleFlip(int x)
     {
-        bean.transform.localScale = new Vector2(1, 1);
+        bean.transform.localScale = new Vector2(x, 1);
     }
 
-    public void ToRight()
+    public void ChangeCharacterImage(int index)
     {
-        bean.transform.localScale = new Vector2(-1, 1);
+        characterImage.GetComponent<Image>().sprite = characterSprites[index];
     }
-*/
-    // Realizēt ToggleFlip metodi, kas apvieno ToLeft un ToRight
 
-
-
-
-    public void ChangeVolume()
+    public void ChangeRotatn()
     {
-        float sizeValue = sizeSlider.GetComponent<Slider>().value;
-        soundVolume.transform.localScale = 
-                            new Vector2(1f * sizeValue, 1f * sizeValue);
+        float rotationValue = RotationSlider.GetComponent<Slider>().value;
+        characterImage.transform.localRotation = Quaternion.Euler(0, 0,360 * rotationValue);
+    }
+    public void ChangeSize()
+    {
+        float sizeValue = SizeSlider.GetComponent<Slider>().value;
+        characterImage.transform.localScale = new Vector2(1f * sizeValue,1f * sizeValue);
     }
 }

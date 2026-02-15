@@ -4,11 +4,11 @@
 > [!IMPORTANT]
 > Projekta funkcionalitāte:
 
-- [ ] Iespēja ieslēgt / izslēgt tv
-- [ ] Kanālu maīņa funkcija
-- [ ] Skaļuma maiņa funkcija
-- [ ] Audio efekts pēc peles kursora novietošanas
-- [ ] UI elementu animēšana
+- [x] Iespēja ieslēgt / izslēgt tv
+- [x] Kanālu maīņa funkcija
+- [x] Skaļuma maiņa funkcija
+- [x] Audio efekts pēc peles kursora novietošanas
+- [x] UI elementu animēšana
 
 > [!CAUTION]
 > :octocat:
